@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrash:pharmacy-Abera Pharmacy</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/products.css">
+
+</head>
+
+<body>
+    <header>
+
+        <a href="#" class="logo"><i class="fa fa-bicycle"></i>Adrash</a>
+
+        <nav>
+            <ul id="MenuItems" class="Menu-bar">
+                <li><a href="index.html">home</a></li>
+                <li><a href="order.html">location</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="#contact">Contuct us</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <input type="search" placeholder="search here..." name="" id="search-box">
+            <i class="fa fa-search" id="search-icon"></i>
+            <i class="fa menu-icon fa-bars" onclick="menutoggle()"></i>
+            <a href="cart.html" class="fa cart fa-shopping-cart"><span id="cart">0</span></a>
+        </div>
+    </header>
+    <!--products-->
+
+    <div class="container">
+        <div class="row-1">
+            <h2 class="title">Abera Pharmacy</h2>
+            <h3 style="color:red;font-size:20px">warning: those are prescription drug</h3>
+        </div>
+        <aside>
+            <h2>play games till your delivery arrives:-</h2>
+            <iframe src="https://play.famobi.com/om-nom-run/A1000-10" height="270" width="250" title="Iframe Example"></iframe>
+            <iframe src="https://play.famobi.com/snowball-world/A1000-10" height="270" width="250" title="Iframe Example"></iframe>
+            <iframe src="https://play.famobi.com/red-head/A1000-10" height="270" width="250" title="Iframe Example"></iframe>
+        </aside>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a1.png" alt="burger">
+            </div>
+            <div class="contenter">
+                <div class="productionName">
+                    <h3>panadol</h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>51 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p>
+
+
+                    <a class="add-cart cart1" onclick="cart()">Add to CART</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a8.jpg" alt="burger">
+            </div>
+            <div class="contenter">
+                <div class="productionName">
+                    <h3>simvastatin</h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>45 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p>
+                    <a class="add-cart cart1" onclick="cart()">Add to CART</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a2.jpeg" alt="burger">
+            </div>
+            <div class="contenter">
+                <div class="productionName">
+                    <h3>tylenol</h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>80 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p>
+                    <a class="add-cart cart2" onclick="cart()">Add to CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a3.jpg" alt="burger">
+            </div>
+            <div class="contenter">
+                <div class="productionName">
+                    <h3>hydrocortisone</h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>130 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p> <a class="add-cart cart3" onclick="cart()">Add to CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a4.jpg" alt="burger">
+            </div>
+            <div class="contenter">
+                <div class="productionName">
+                    <h3>paracetamol </h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>40 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa gray fa-star"></i>
+                        <i class="fa gray fa-star"></i>
+                        <i class="fa gray fa-star"></i>
+
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p> <a class="add-cart cart4" onclick="cart()">Add to CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a5.jpg" alt="burger">
+            </div>
+            <div class="contenter">
+                <div class="productionName">
+                    <h3>amlodipine </h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>34 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa gray fa-star"></i>
+
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p> <a class="add-cart cart5" onclick="cart()">Add to CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a6.jpeg" alt="burger">
+            </div>
+            <div class="contenter">
+                <div class="productionName">
+                    <h3>amoxicillin </h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>130 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p> <a class="add-cart cart6" onclick="cart()">Add to CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a6.jpg" alt="burger">
+            </div>
+            <div class="content">
+                <div class="productionName">
+                    <h3>metformin</h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>110 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p> <a class="add-cart cart7" onclick="cart()">Add to CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a7.jpg" alt="burger">
+            </div>
+            <div class="content">
+                <div class="productionName">
+                    <h3>antibiotics </h3>
+                </div>
+                <div class="price_ratig">
+                    <span class="shop-item-price">13 birr</span>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa gray fa-star"></i>
+                        <i class="fa gray fa-star"></i>
+                    </div>
+
+                </div>
+                <i class="fa info fa-info" onclick="info22()"></i>
+                <a class="add-cart cart7" onclick="cart()">Add to CART</a>
+            </div>
+        </div>
+        <!---offer start-->
+        <div class="grid-span-1">
+            <div class="small-container">
+
+                <div class="col-2">
+                    <img src="images/a21.png" class="offer-img" width="300px" height="300px">
+
+                    <div class="col-3">
+
+                        <p>exclusively avaliable on Debomaris pizza Restaurant</p>
+                        <h1>slim:loss weight</h1>
+                        <h3>800birr</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                        </p>
+                        <a class="add-cart cart16" style="margin-top: 50px;" onclick="cart()">Add to CART</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!---offer endes-->
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a9.jpg" alt="burger">
+            </div>
+            <div class="contenter">
+                <div class="productionName">
+                    <h3>lbuprofen</h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>210 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p> <a class="add-cart cart8" onclick="cart()">Add to CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a10.jpg" alt="burger">
+            </div>
+            <div class="contenter">
+                <div class="productionName">
+                    <h3>oxycontin</h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>170 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p> <a class="add-cart cart9" onclick="cart()">Add to CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a11.jpg" alt="burger">
+            </div>
+            <div class="contenter">
+                <div class="productionName">
+                    <h3>gabapentin</h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>150 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p> <a class="add-cart cart10" onclick="cart()">Add to CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a12.jpg" alt="burger">
+            </div>
+            <div class="contenter">
+                <div class="productionName">
+                    <h3>citalopram </h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>130 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa gray fa-star"></i>
+                        <i class="fa gray fa-star"></i>
+                        <i class="fa gray fa-star"></i>
+
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p> <a class="add-cart cart11" onclick="cart()">Add to CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a13.jpg" alt="burger">
+            </div>
+            <div class="contenter">
+                <div class="productionName">
+                    <h3>azithromycin </h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>105 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa gray fa-star"></i>
+
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p> <a class="add-cart cart12" onclick="cart()">Add to CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a14.jpg" alt="burger">
+            </div>
+            <div class="contenter">
+                <div class="productionName">
+                    <h3>furosemida</h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>270 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p> <a class="add-cart cart13" onclick="cart()">Add to CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a15.jpg" alt="burger">
+            </div>
+            <div class="content">
+                <div class="productionName">
+                    <h3>alprazolam </h3>
+                </div>
+                <div class="price_ratig">
+                    <h2>120 birr</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p> <a class="add-cart cart14" onclick="cart()"> Add to CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/a16.jpg" alt="burger">
+            </div>
+            <div class="content">
+                <div class="productionName">
+                    <h3>clonazepam</h3>
+                </div>
+                <div class="price_ratig">
+                    <span class="shop-item-price">129 birr</span>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa gray fa-star"></i>
+                        <i class="fa gray fa-star"></i>
+                    </div>
+                    <p style="font-size: 13px;margin:10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, praesentium?
+                    </p> <a class="add-cart cart15" onclick="cart()">Add to CART</a>
+                </div>
+            </div>
+        </div>
+        <section class="page">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+
+        </section>
+        <footer class="footer">
+            <div class="foot">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>
+                                <a href="aboutus.html">about us</a>
+                            </li>
+                            <li>
+                                <a href="">our service</a>
+                            </li>
+                            <li>
+                                <a href="">privacy polices</a>
+                            </li>
+                            <li>
+                                <a href="">affiliate program</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <a name="contact">
+                            <h4>contact us</h4>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="">adrash@gmail.com</a>
+                            </li>
+                            <li>
+                                <a href="">tel:+2519123456</a>
+                            </li>
+                            <li>
+                                <a href="aboutus.html#payment">payment options</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li>
+                                <a href="pharmacy-list.html">medical</a>
+                            </li>
+                            <li>
+                                <a href="grocery-list.html">Grocery</a>
+                            </li>
+                            <li>
+                                <a href="restaurant-list.html">Restaurant</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href=""><i class="fa fa-facebook-f"></i></a>
+                            <a href=""><i class="fa fa-instagram"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-snapchat"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!--offer      -->
+
+        <!--------------------footer---------------------->
+        <script src="js/script.js"></script>
+        <!-----js for menu toggle--->
+
+</body>
+
+</html>

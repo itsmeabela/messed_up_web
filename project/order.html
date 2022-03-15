@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adrash:order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/order-about-cart-login.css">
+</head>
+
+<body>
+    <header>
+
+        <a href="#" class="logo"><i class="fa fa-bicycle"></i>Adrash</a>
+        <nav>
+            <ul id="MenuItems" class="Menu-bar">
+                <li><a href="index.html">home</a></li>
+                <li><a href="order.html">location</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="#contact">Contuct us</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="icons">
+            <input type="search" placeholder="search here..." name="" id="search-box">
+            <i class="fa fa-search" id="search-icon"></i>
+            <i class="fa menu-icon fa-bars" onclick="menutoggle()"></i>
+            <a href="#" class="fa fa-shopping-cart"></a>
+        </div>
+
+    </header>
+    <!--------------header end------------>
+
+    <section class="order" id="order">
+
+        <div class="heading">
+            <span>order now</span>
+            <h3>fast home delivery</h3>
+        </div>
+
+        <form action="">
+            <div class="box-container">
+                <div class="box">
+                    <div class="inputBox">
+
+                        <input type="text" placeholder="enter fullname..." required>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" placeholder="specifics with food">
+                    </div>
+                    <div class="inputBox">
+
+                        <input type="text" placeholder="your address">
+                    </div>
+                    <div class="inputBox">
+
+                        <textarea name="text" id="" cols="30" rows="10" placeholder="any comment.." style='margin-top:35px;'></textarea> </div>
+                </div>
+                <div class="box">
+                    <div class="inputBox">
+                        <input type="number" placeholder="enter your number">
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" placeholder="known near by spot">
+                    </div>
+                    <div class="inputBox">
+                        <input type="datetime-local">
+                    </div>
+                    <div class="inputBox">
+                        <span>your specific address</span>
+                        <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1gyAd5rtpS5J4W-VDu6ijHn0iurwa5TwM&ehbc=2E312F" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="order now" class="btn">
+        </form>
+
+    </section>
+    <!--footer starts -->
+    <footer class="footer">
+        <div class="foot">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>
+                            <a href="aboutus.html">about us</a>
+                        </li>
+                        <li>
+                            <a href="index.html">our service</a>
+                        </li>
+                        <li>
+                            <a href="">privacy polices</a>
+                        </li>
+                        <li>
+                            <a href="">affiliate program</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <a name="contact">
+                        <h4>contact us</h4>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="">adrash@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="">tel:+2519123456</a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html#payment">payment options</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li>
+                            <a href="pharmacy-list.html">medical</a>
+                        </li>
+                        <li>
+                            <a href="grocery-list.html">Grocery</a>
+                        </li>
+                        <li>
+                            <a href="restaurant-list.html">Restaurant</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 name="contact">Follow Us</h4>
+                    <div class="social-links">
+                        <a href=""><i class="fa fa-facebook-f"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-snapchat"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

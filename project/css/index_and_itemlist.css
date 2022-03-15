@@ -1,0 +1,471 @@
+:root {
+    --orange: rgb(240, 144, 35);
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --red: #ff3838;
+}
+
+* {
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i {
+    background: linear-gradient(green, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* nav bar */
+
+nav {
+    font-size: 15px;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--black);
+    transition: 0.5s;
+    border-radius: 30px;
+}
+
+nav ul li a:hover {
+    color: var(--orange);
+    filter: brightness(100%);
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+/* nav bar ends */
+
+header .icons i,
+header .icons a {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover {
+    color: #fff;
+    background: var(--orange);
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+#search-box {
+    border: 1px solid var(--orange);
+    border-radius: 4px;
+    padding: 0 7px;
+    transition: 0.5s;
+}
+
+#search-box:focus {
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+#search-box:active {
+    background: orange;
+}
+
+
+/* **************header ends********************* */
+
+
+/* ********    ----product list----*********     */
+
+.container {
+    display: block;
+    position: relative;
+    top: 130px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.container .row-1 {
+    color: var(--orange);
+    font-size: 30px;
+    margin-bottom: 25px;
+    grid-column: span 4;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.container a {
+    color: black;
+}
+
+.container .card {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 12px 12px 12px;
+}
+
+.container .card .imgBx {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.container .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+    transform-origin: center;
+}
+
+.container .card .contenter {
+    padding: 10px;
+}
+
+.container .card .productionName {
+    font-size: 20px;
+}
+
+
+/* ******************product list ends*************** */
+
+
+/*-----------where the first or the header ends-----*/
+
+.speciality {
+    background: radial-gradient(white, gold);
+    padding-bottom: 70px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #666;
+}
+
+.heading span {
+    color: var(--red);
+}
+
+.speciality .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.box-container,
+.speciality h1 {
+    position: relative;
+    top: 100px;
+}
+
+.speciality .box-container .box {
+    flex: 1 2 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border-bottom: 2px solid orangered;
+    border-radius: .5rem;
+}
+
+.speciality .box-container .box .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
+.speciality .box-container .box .content {
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+}
+
+.speciality .box-container .box .content img {
+    margin: 1.5rem 0;
+}
+
+.speciality .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.speciality .box-container .box .content p {
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.speciality .box-container .box:hover .image {
+    top: 0;
+}
+
+.speciality .box-container .box:hover .content {
+    transform: translatey(100%);
+}
+
+
+/*paartners*/
+
+.sponser {
+    color: orange;
+    font-size: 30px;
+    position: relative;
+    top: 60px;
+    left: 650px;
+}
+
+.brands {
+    margin: 100px auto;
+}
+
+.brands .row {
+    display: flex;
+    justify-content: center;
+}
+
+.col-5 {
+    width: 130px;
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover {
+    filter: grayscale(0);
+}
+
+
+/**************restaurant chhose*****************/
+
+
+/*--------footer -------*/
+
+.footer {
+    margin-top: 160px;
+    background: #24262b;
+    padding: 70px 0;
+}
+
+.footer {
+    grid-column: span 4;
+}
+
+.foot {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.foot ul {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+    padding-left: 10px;
+}
+
+.footer-col .social-links a,
+.footer-col .social-links a i {
+    display: inline-block;
+    font-size: 15px;
+    height: 40px;
+    width: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover,
+.footer-col .social-links a i:hover {
+    color: #24262b;
+    background: #fff;
+}
+
+
+/* media queries  */
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 1rem 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .sponser {
+        position: relative;
+        top: 50px;
+        left: 0;
+        right: 0px;
+        text-align: center;
+    }
+    #search-form #search-box {
+        width: 90%;
+        margin: 0 1rem;
+    }
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 10px;
+        background: rgba(43, 41, 41, 0.7);
+        width: 100%;
+        overflow: hidden;
+        transition: 0.5s;
+        margin-top: 20px;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: rgb(255, 255, 255);
+        display: block;
+        cursor: pointer;
+    }
+    .menu-icon {
+        margin: 15px 20px;
+        display: inline-block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .dishes .box-container .box img {
+        height: auto;
+        width: 100%;
+    }
+    .order form .inputBox .input {
+        width: 100%;
+    }
+}
